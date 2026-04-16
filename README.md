@@ -56,6 +56,7 @@ Exploiting: Risc que jugadors usin auto-clickers simples si no hi ha un mínim d
 UI Dinàmica: Configurar els menús de botiga perquè funcionin correctament en mòbils i PC.
 
 11. Exploració amb IA
+
 Prompt 1: "Dona'm un script senzill de Roblox per a un sistema de Clicker on al fer clic a un objecte anomenat 'Brainrot' es sumin diners a una variable de Leaderstats."
 
 Resposta resumida: La IA ha proporcionat un script de ClickDetector que interactua amb el DataStore i les Leaderstats.
@@ -71,6 +72,7 @@ Un joc de colpejar un NPC estàtic (Brainrot) amb un sistema de botiga de força
 Roblox Studio permet crear sistemes de punts i zones molt ràpidament amb scripts de Lua senzills. Al no incloure sistemes complexos com inventaris de mascotes o animacions, el "core loop" es pot programar en poques hores.
 
 14. Mini pla de treball
+
 Fase 1 (1.5h): Disseny i documentació (Aquesta fase).
 
 Fase 2 (3h): Creació de Leaderstats (Diners/Força) i script de clic al Brainrot.
