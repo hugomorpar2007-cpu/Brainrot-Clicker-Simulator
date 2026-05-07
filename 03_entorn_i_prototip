@@ -1,0 +1,44 @@
+1. Evidències del treball realitzat
+Fins ara, el projecte ha passat de ser una idea conceptual a un prototip funcional a Roblox Studio. Les fites assolides són:
+
+Construcció del mapa: Disseny de 4 zones temàtiques (Bosc, Aigua, Lava i Espai) amb escala x5.
+
+Sistema de progressió física: Creació de murs amb obertures (huecos) i portes translúcides (Gates) que bloquegen el pas.
+
+Mecànica de clic: Implementació del "Tung Tung Sahur" (Brainrot) com a objecte d'interacció principal.
+
+Interfície d'usuari (HUD): Disseny inicial del marcador de monedes, força i rebirths, a més del panell d'inventari per a mascotes.
+
+2. IDE utilitzat i configuració bàsica
+Motor/IDE: Roblox Studio.
+
+Llenguatge: Luau (una variant de Lua optimitzada per a Roblox).
+
+Configuració:
+
+Activació d'API Services a la configuració del joc per permetre l'ús de DataStoreService.
+
+Configuració del Snap to Grid a 1 stud per a l'alineació precisa de les parets i les "Gates".
+
+Ús de Explorer i Properties per a la gestió de la jerarquia d'objectes (Workspace, ServerScriptService, StarterGui).
+
+3. Decisions inicials d’implementació
+Modularitat: He dividit el mapa en carpetes independents (Zone0, Zone1, etc.) per facilitar l'aplicació de scripts de zona i multiplicadors.
+
+Sistema de Guardat: He decidit utilitzar un DataStore únic que guarda un diccionari amb totes les estadístiques (Diners, Força, Rebirths) per optimitzar les crides al servidor.
+
+Mecànica de Clic: El càlcul del guany es fa íntegrament al costat del servidor per evitar trampes (exploits), sumant la força base del jugador i els multiplicadors de les mascotes equipades.
+
+Construcció: Per als accessos entre zones, he optat per crear obertures físiques reals als murs en lloc de fer els murs transparents, millorant la immersió.
+
+
+4. Condicions mínimes (Prototip funcional)
+Actualment, el joc ja compleix els següents mínims funcionals:
+
+Bucle principal: El jugador pot fer clic al Brainrot i rebre diners de forma immediata.
+
+Estats del joc: Els valors de Dineros, Força i Rebirths són visibles i s'actualitzen en temps real.
+
+Col·lisions: Les portes bloquegen el pas físicament si el jugador no té els Rebirths necessaris.
+
+Persistència: Les dades bàsiques es guarden en sortir del servidor i es carreguen en entrar.
